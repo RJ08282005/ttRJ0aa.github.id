@@ -1,16 +1,16 @@
 @font-face{
 	font-family:myFont;
-	src:url(../fonts/Memphis.otf);
+	src:url(fonts/Memphis.otf);
 }
 @font-face{
 	font-family:myFont2;
-	src:url(../fonts/font-awesome.otf);
+	src:url(fonts/font-awesome.otf);
 }
 
 
 @font-face{
 	font-family:myFont3;
-	src:url(../fonts/Poppins-bold.otf);
+	src:url(fonts/Poppins-bold.otf);
 }
 *{
 	margin: 0;
