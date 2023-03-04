@@ -1,15 +1,15 @@
 @font-face{
-	font-family: myFont;
+	font-family:myFont;
 	src:url(../fonts/Memphis.otf);
 }
 @font-face{
-	font-family: myFont2;
+	font-family:myFont2;
 	src:url(../fonts/font-awesome.otf);
 }
 
 
 @font-face{
-	font-family: myFont3;
+	font-family:myFont3;
 	src:url(../fonts/Poppins-bold.otf);
 }
 *{
@@ -21,7 +21,7 @@
 /*navbar*/
 
 .navbar{
-	font-family: myFont3;
+	font-family:myFont3;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -107,7 +107,7 @@ header{
 }
 
 .header-content h2{
-	font-family: myFont3;
+	font-family:myFont3;
 	font-size: 7vmin;
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -116,7 +116,7 @@ header{
 
 .header-content h1{
 	font-size: 4vmin;
-	font-family: myFont;
+	font-family:myFont;
 	color: white;
 }
 
