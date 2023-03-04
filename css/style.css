@@ -1,0 +1,222 @@
+@font-face{
+	font-family: myFont;
+	src:url(../fonts/Memphis.otf);
+}
+@font-face{
+	font-family: myFont2;
+	src:url(../fonts/font-awesome.otf);
+}
+
+
+@font-face{
+	font-family: myFont3;
+	src:url(../fonts/Poppins-bold.otf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*navbar*/
+
+.navbar{
+	font-family: myFont3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding:0px;
+	color: white;
+
+}
+
+#nav-toogle{
+	position: absolute;
+	top:-100px;
+}
+
+.navbar .icon-burger{
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	cursor: pointer;
+	transform: translateY(-50%);
+}
+
+.navbar .icon-burger .line1{
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+.nav-links{
+	display: flex;
+	align-items: center;
+}
+
+.nav-links li{
+	margin: 10px 30px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+ul{
+	list-style: none;
+}
+
+
+ul li a:hover{
+	color:rgb(255, 0, 68);
+	cursor: pointer;
+}
+
+.logo{
+	position: relative;
+	margin: 10px;
+}
+
+
+
+/*header*/
+
+header{
+	background-image: url(../Homepage/background.jpg);
+	width: 100vw;
+	height: 100vh;
+	background-position: bottom;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.header-content{
+	margin-bottom: 160px;
+	color: whitesmoke;
+	text-align: center;
+
+}
+
+.header-content h2{
+	font-family: myFont3;
+	font-size: 7vmin;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+.header-content h1{
+	font-size: 4vmin;
+	font-family: myFont;
+	color: white;
+}
+
+.line{
+	width: 150px;
+	height: 4px;
+	background: #fc036b;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+
+/*button*/
+
+.btn{
+	width: 130px;
+	height: 65px;
+	padding: 8px 15px;
+	font-family:myFont2;
+	font-weight: bold;
+	border: none;
+	color: whitesmoke;
+	background-color: rgb(255, 0, 68);
+	border-radius: 4px;
+	box-shadow: inset 0 0 0 0 black;
+	transition: ease-out 0.2s;
+	font-size: 1.5rem;
+	outline: none;
+	top: 370px;
+	border-radius: 30px;
+}
+
+.btn:hover{
+	box-shadow: inset 300px 0 0 0 yellow;
+	cursor: pointer;
+	color: #000;
+	transform: scale(1.1);
+}
+
+
+@media only screen and (max-width:850px){
+
+/*navbar*/
+
+	.logo{
+	width: auto;
+	z-index: 8;
+}
+	.nav-links{
+		float: none;
+		z-index: 9;
+		position: fixed;
+		flex-direction: column;
+		left: 0;
+		right: 0;
+		width: auto;
+		height: auto;
+		top: 0;
+		bottom: 100%;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.8)70%, rgba(0, 0, 0, 0.8)70%);
+		overflow: hidden;
+		transition: all .5s ease-in-out;
+	
+		
+}
+    .nav-links li{
+	margin: 30px auto;
+}
+
+
+    .navbar .icon-burger{
+	display: block;
+	cursor: pointer;
+	z-index: 10;
+}
+    .navbar :checked ~ .nav-links{
+    bottom: 0;
+    
+    }
+    .navbar .icon-burger{
+    display: block;
+}
+    .navbar :checked ~ .icon-burger .line1:nth-child(1){
+	transform: translateY(10px)rotate(225deg);
+}
+    .navbar :checked ~ .icon-burger .line1:nth-child(2){
+	opacity: 0;
+}
+    .navbar :checked ~ .icon-burger .line1:nth-child(3){
+	transform: translateY(-10px)rotate(-225deg);
+} 
+
+
+/* Header */
+
+
+.header-content{
+	margin:auto;
+	color: whitesmoke;
+	text-align: center;
+}
+
+}
